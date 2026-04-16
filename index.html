@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Diario</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <a href="#">Blog<span>Diario</span></a>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Estilo de vida</a></li>
+        <li><a href="#">Salud</a></li>
+        <li><a href="#">Videojuegos</a></li>
+        <li><a href="#">Viajes</a></li>
+        <li><a href="#">Comida</a></li>
+        <li><a href="#">Negocios</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container main-layout">
+
+<section class="articles-column">
+
+  <div class="featured-cards">
+
+    <article class="card card--featured">
+      <div class="card__image-wrap">
+        <img src="img/imagen1.jpg" alt="Paisaje de lago rodeado de montañas">
+        <span class="badge badge--lifestyle">Lifestyle</span>
+      </div>
+      <div class="card__body">
+        <h2 class="card__title">Lugares más visitados del mundo</h2>
+        <p class="card__meta">Top lugares</p>
+      </div>
+    </article>
+
+    <article class="card card--featured">
+      <div class="card__image-wrap">
+        <img src="img/imagen2.jpg" alt="Persona haciendo ejercicio al amanecer">
+        <span class="badge badge--health">Salud</span>
+      </div>
+      <div class="card__body">
+        <h2 class="card__title">El ejercicio mejora la productividad</h2>
+        <p class="card__meta">Salud</p>
+      </div>
+    </article>
+
+    <article class="card card--featured">
+      <div class="card__image-wrap">
+        <img src="img/imagen3.jpg" alt="Sala de videojuegos con luces neón">
+        <span class="badge badge--gaming">Gaming</span>
+      </div>
+      <div class="card__body">
+        <h2 class="card__title">Los videojuegos ayudan al estrés</h2>
+        <p class="card__meta">Juego</p>
+      </div>
+    </article>
+
+  </div>
+
+  <article class="article-main">
+    <img class="article-main__image" src="img/imagen4.jpg" alt="Paisaje de río con montañas nevadas">
+    <p class="article-main__category">Viajes</p>
+    <h2 class="article-main__title">Dónde ir en tus próximas vacaciones</h2>
+    <p class="article-main__byline">Por Jane Doe</p>
+    <p class="article-main__excerpt">
+      Existen muchos lugares que se pueden visitar, por lo tanto se muestran opciones que llaman la atención para poder viajar.
+    </p>
+    <a href="#" class="read-more">Leer más</a>
+  </article>
+
+  <div class="cards-grid">
+
+    <article class="card card--small">
+      <img src="img/imagen5.jpg" alt="Grupo de amigos en la playa">
+      <h3>Playa y amigos</h3>
+      <p>Muchas personas viven cerca de lugares así, pero no los aprovechan.</p>
+      <a href="#" class="read-more">Leer más</a>
+    </article>
+
+    <article class="card card--small">
+      <img src="img/imagen6.jpg" alt="Lago con cielo estrellado">
+      <h3>Una nueva experiencia</h3>
+      <p>Se muestran lugares interesantes para conocer.</p>
+      <a href="#" class="read-more">Leer más</a>
+    </article>
+
+    <article class="card card--small">
+      <img src="img/imagen7.jpg" alt="Niños jugando en un bosque">
+      <h3>Recordar el pasado</h3>
+      <p>Se piensa en cómo sería volver a etapas anteriores.</p>
+      <a href="#" class="read-more">Leer más</a>
+    </article>
+
+    <article class="card card--small">
+      <img src="img\imagen8.jpg" alt="Persona entrenando en pista">
+      <h3>Formas de entrenar</h3>
+      <p>Se explican maneras para poder mejorar el rendimiento físico.</p>
+      <a href="#" class="read-more">Leer más</a>
+    </article>
+
+  </div>
+
+  <div class="load-more-wrap">
+    <button class="btn-load-more">Cargar más</button>
+  </div>
+
+</section>
+
+<aside class="sidebar">
+
+  <section class="widget widget--newsletter">
+    <h3 class="widget__title">Suscribirse</h3>
+    <p class="widget__subtitle">Un correo por semana</p>
+
+    <form class="newsletter-form">
+      <input type="text" placeholder="Nombre" required>
+      <input type="text" placeholder="Apellido" required>
+      <input type="email" placeholder="Correo" required>
+      <button type="submit" class="btn-subscribe">Enviar</button>
+    </form>
+  </section>
+
+  <section class="widget widget--categories">
+    <h3 class="widget__title">Categorías</h3>
+    <ul class="category-list">
+      <li><a href="#">Lifestyle</a><span>32</span></li>
+      <li><a href="#">Salud</a><span>41</span></li>
+      <li><a href="#">Gaming</a><span>27</span></li>
+      <li><a href="#">Viajes</a><span>21</span></li>
+      <li><a href="#">Comida</a><span>15</span></li>
+      <li><a href="#">Negocios</a><span>28</span></li>
+    </ul>
+  </section>
+
+</aside>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2024 Blog Diario</p>
+    <nav>
+      <a href="#">Privacidad</a>
+      <a href="#">Términos</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
